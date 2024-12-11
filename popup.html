@@ -1,0 +1,76 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facebook Post Scraper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      width: 320px;
+      min-height: 200px;
+      padding: 20px;
+      background: linear-gradient(135deg, #1a1f25 0%, #242c37 100%);
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(71, 118, 230, 0.2);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(71, 118, 230, 0.3);
+    }
+
+    button:active {
+      transform: translateY(0px);
+    }
+
+    #status {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      font-size: 14px;
+      line-height: 1.5;
+      color: #e0e0e0;
+      transition: all 0.3s ease;
+    }
+
+    .info-section {
+      margin-bottom: 16px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="info-section">
+    <button id="scrapeButton">
+      Copy Page Info & Posts
+    </button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Post Scraper",
+  "version": "1.0",
+  "description": "Extract text from the last 10 Facebook posts",
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
